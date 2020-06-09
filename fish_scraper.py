@@ -63,10 +63,10 @@ def fetch_image_urls(query: str, max_links_to_fetch: int, wd: webdriver, sleep_b
 
     return image_urls
 
-urls = list(fetch_image_urls("fish", 1000, wd))
 
-db = TinyDB("fishurls.json")
-db_insert = {
-    "urls": urls
-}
-db.insert(db_insert)
+urls = list(fetch_image_urls("fish", 100, wd))
+
+
+for url in urls:
+    with open("fish_urls.txt", mode='a') as f:
+        f.write(f"\n{url}")
