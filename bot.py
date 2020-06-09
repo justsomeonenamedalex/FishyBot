@@ -81,7 +81,7 @@ async def goodnight(ctx):
 
 @commands.is_owner()
 async def invite(ctx):
-    await ctx.send("https://discord.com/api/oauth2/authorize?client_id=719968421554683995&permissions=8&scope=bot")
+    await ctx.send("")
 
 
 # Main Command
