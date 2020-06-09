@@ -1,0 +1,2 @@
+# FishyBot
+FishyBot discord bot
